@@ -43,7 +43,7 @@ function removeIndex(removeI, arr) {
     return null
   }
   var temp = arr[removeI]
-  for (let i = removeI; i < arr.length; i++) {
+  for (let i = removeI; i < arr.length-1; i++) {
     arr[i] = arr[i+1]
   }
   arr.pop()
